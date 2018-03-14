@@ -12,7 +12,7 @@ public class Event {
 
     @Id
     @GeneratedValue
-    public long id;
+    public Long id;
 
     public String name;
 
