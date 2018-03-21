@@ -1,4 +1,4 @@
-package soa.group2.soagroup2;
+package com.soa.recruitment;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SoaGroup2ApplicationTests {
+public class RecruitmentApplicationTests {
 
 	@Test
 	public void contextLoads() {

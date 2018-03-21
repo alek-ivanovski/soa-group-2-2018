@@ -1,12 +1,12 @@
-package soa.group2.soagroup2;
+package com.soa.recruitment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SoaGroup2Application {
+public class RecruitmentApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SoaGroup2Application.class, args);
+		SpringApplication.run(RecruitmentApplication.class, args);
 	}
 }
