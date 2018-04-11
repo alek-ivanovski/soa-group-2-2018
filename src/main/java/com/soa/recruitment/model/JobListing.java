@@ -13,7 +13,7 @@ public class JobListing {
 
     @Id
     @GeneratedValue
-    public long id;
+    public Long id;
 
     public String jobType;
     public String jobTitle;
