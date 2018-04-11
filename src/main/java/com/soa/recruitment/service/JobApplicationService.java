@@ -6,4 +6,7 @@ public interface JobApplicationService {
 
     public JobApplication getApplication(Long id);
 
+    public void deleteApplication(Long id);
+
+    public JobApplication create(JobApplication jobApplication);
 }

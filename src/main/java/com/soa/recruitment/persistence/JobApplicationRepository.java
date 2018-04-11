@@ -6,4 +6,9 @@ public interface JobApplicationRepository {
 
     public JobApplication findById(Long id);
 
+    public void deleteById(Long id);
+
+    public JobApplication save(JobApplication jobApplication);
+
+
 }

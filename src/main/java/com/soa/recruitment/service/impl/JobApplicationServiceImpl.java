@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class JobApplicationServiceImpl {
+public class JobApplicationServiceImpl implements JobApplicationService {
 
     private JobApplicationRepository jobApplicationRepository;
 
@@ -16,8 +16,18 @@ public class JobApplicationServiceImpl {
         this.jobApplicationRepository = jobApplicationRepository;
     }
 
+    @Override
     public JobApplication getApplication(Long id) {
         return jobApplicationRepository.findById(id);
     }
 
+    @Override
+    public JobApplication create(JobApplication jobApplication) {
+        return jobApplicationRepository.save(jobApplication);
+    }
+
+    @Override
+    public void deleteApplication(Long id) {
+        jobApplicationRepository.deleteById(id);
+    }
 }
