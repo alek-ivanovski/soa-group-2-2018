@@ -4,10 +4,7 @@ import com.soa.recruitment.model.JobApplication;
 import com.soa.recruitment.service.JobApplicationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/recruitment/jobs/application", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
@@ -23,6 +20,17 @@ public class JobApplicationController {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public JobApplication getApplication(@PathVariable Long id) {
         return jobApplicationService.getApplication(id);
+
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public void deleteApplication(@PathVariable Long id) {
+        jobApplicationService.deleteApplication(id);
+    }
+
+    @RequestMapping(method = RequestMethod.POST)
+    public JobApplication create(@RequestBody JobApplication jobApplication) {
+        return jobApplicationService.create(jobApplication);
     }
 
 }
