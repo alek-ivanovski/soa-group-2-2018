@@ -12,11 +12,11 @@ public interface JobListingRepository {
 
     Iterable<JobListing> findAll();
 
-    void delete(long id);
+    void delete(Long id);
 
     JobListing save(JobListing jobListing);
 
-    JobListing findById(long id);
+    JobListing findById(Long id);
 
 }
 
