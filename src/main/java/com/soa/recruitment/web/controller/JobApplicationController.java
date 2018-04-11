@@ -23,7 +23,7 @@ public class JobApplicationController {
 
     }
 
-    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     public void deleteApplication(@PathVariable Long id) {
         jobApplicationService.deleteApplication(id);
     }
