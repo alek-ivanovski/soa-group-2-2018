@@ -1,7 +1,9 @@
 package com.soa.recruitment.persistence;
 
-import org.springframework.stereotype.Repository;
+import com.soa.recruitment.model.JobApplication;
 
-@Repository
-public class JobApplicationRepository {
+public interface JobApplicationRepository {
+
+    public JobApplication findById(Long id);
+
 }
