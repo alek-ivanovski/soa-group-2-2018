@@ -1,7 +1,9 @@
 package com.soa.recruitment.service;
 
-import org.springframework.stereotype.Service;
+import com.soa.recruitment.model.JobApplication;
 
-@Service
-public class JobApplicationService {
+public interface JobApplicationService {
+
+    public JobApplication getApplication(Long id);
+
 }
