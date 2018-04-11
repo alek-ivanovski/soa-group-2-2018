@@ -15,9 +15,9 @@ public class JobListing {
     @GeneratedValue
     public Long id;
 
-    public String jobType;
-    public String jobTitle;
-    public String jobDescription;
+    public String type;
+    public String title;
+    public String description;
     public int numPositionsOpen;
     public Long salaryRange;
     public LocalDate applicationDeadline;
