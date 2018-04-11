@@ -17,7 +17,7 @@ public class JobApplicationServiceImpl {
     }
 
     public JobApplication getApplication(Long id) {
-        return jobApplicationRepository.findById(Long id);
+        return jobApplicationRepository.findById(id);
     }
 
 }
