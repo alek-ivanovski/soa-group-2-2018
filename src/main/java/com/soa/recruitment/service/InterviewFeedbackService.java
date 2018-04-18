@@ -4,7 +4,7 @@ package com.soa.recruitment.service;
 import com.soa.recruitment.model.InterviewFeedback;
 import org.springframework.stereotype.Service;
 
-@Service
+
 public interface InterviewFeedbackService {
 
     boolean addInterviewFeedback(InterviewFeedback interviewFeedback);

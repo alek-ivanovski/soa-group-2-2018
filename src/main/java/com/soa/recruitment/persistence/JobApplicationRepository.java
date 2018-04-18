@@ -1,14 +1,11 @@
 package com.soa.recruitment.persistence;
 
 import com.soa.recruitment.model.JobApplication;
+import org.springframework.context.annotation.Profile;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface JobApplicationRepository {
-
-    public JobApplication findById(Long id);
-
-    public void deleteById(Long id);
-
-    public JobApplication save(JobApplication jobApplication);
-
+@Repository
+public interface JobApplicationRepository extends JpaRepository<JobApplication, Long> {
 
 }

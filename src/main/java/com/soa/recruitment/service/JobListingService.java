@@ -5,7 +5,6 @@ import com.soa.recruitment.model.JobListing;
 import javax.xml.ws.ServiceMode;
 import java.util.Optional;
 
-@ServiceMode
 public interface JobListingService {
 
     Optional<JobListing> findOne(Long id);

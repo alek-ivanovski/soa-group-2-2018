@@ -6,6 +6,8 @@ import com.soa.recruitment.service.JobApplicationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class JobApplicationServiceImpl implements JobApplicationService {
 
@@ -17,7 +19,7 @@ public class JobApplicationServiceImpl implements JobApplicationService {
     }
 
     @Override
-    public JobApplication getApplication(Long id) {
+    public Optional<JobApplication> getApplication(Long id) {
         return jobApplicationRepository.findById(id);
     }
 

@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Profile("jpa")
 @Repository
 public interface JobListingRepository extends JpaRepository<JobListing, Long> {
 
