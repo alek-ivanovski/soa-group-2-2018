@@ -19,6 +19,9 @@ services:
       - traefik.frontend.rule=PathPrefixStrip:/app
     depends_on:
       - traefik
+      - db
+    links:
+      - db
 
   db:
     image: postgres
